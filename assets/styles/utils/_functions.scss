@@ -1,0 +1,6 @@
+@function calculateRem($size, $baseSize) {
+  $remSize: $size / $baseSize;
+  @return $remSize * 1rem;
+}
+
+/*calculateRem($size - это число в пикселях, которое задано в макете, $baseSize - это число, которое по идее должно быть равно $baseFontSize (в этом проэкте - 18пх)*/

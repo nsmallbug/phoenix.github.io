@@ -1,0 +1,36 @@
+.c-cover{
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	position: relative;
+	max-width: 1200px;
+
+	&__logoLarge{
+		height: calculateRem(390, 18);
+		width: calculateRem(390, 18);
+		//height: 390px;
+		//width: 390px;
+		@include logo_Phoenix_large;
+	}
+	&__logoSmall{
+		position: absolute; //TODO погуглить об этом!
+		//я ебу почему, но position: absolute; bottom: 20px; в паре с
+		//настройками для флекс-контейнера дало
+		// позиционирование по центру.
+		bottom: calculateRem(60,18);
+		//bottom: 60px;
+		left: 50%;
+		height: calculateRem(80,18);
+		width: calculateRem(65,18);
+		//height: 80px;
+		//width: 65px;
+		@include fire;
+		margin-left: calculateRem(-25, 18);
+		//margin-left: -25px;
+		z-index: 3;
+	}
+}
+

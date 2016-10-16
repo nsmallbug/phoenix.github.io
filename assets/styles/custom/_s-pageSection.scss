@@ -1,0 +1,85 @@
+.s-pageSection{
+	width: 100vw;
+	min-height: 100vh;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+
+	&_cover{
+		@include bgCover;
+		& .s-pageSection__content{
+			padding: 0;
+		}
+	}
+
+	&_about{
+		@include bgPaper;
+		z-index: 1;
+	}
+	&_details{
+		@include bgDetails;
+	}
+	&_reviews{
+		@include bgPaper;
+		z-index: 1;
+
+	}
+	&_contacts{
+		@include bgContacts;
+	}
+	&__content{
+		width: 100%;
+		height: 100%;
+		//max-width: 1200px;
+		margin: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		-ms-flex-pack: center;
+		position: relative;
+
+	}
+}
+
+
+
+
+/*
+
+
+section.s-cover{
+	@include content;
+	@include bg_dark;}
+
+.content{
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	position: relative;
+
+	&__logoLarge{
+		height: 300px;
+		width: 300px;
+		@include logo_Phoenix_light;
+	}
+	&__logoSmall{
+		position: absolute; //TODO погуглить об этом!
+		//я ебу почему, но position: absolute; bottom: 20px; в паре с
+		//настройками для флекс-контейнера дало ахуетительное
+		// позиционирование по центру.
+		bottom: 35px;
+		left: 50%;
+		height: 50px;
+		width: 50px;
+		@include fire;
+		margin-left: -25px;
+	}
+}
+
+*/

@@ -1,0 +1,303 @@
+@media all and (max-width: 1150px){
+	html{
+		font-size: 16px;
+	}
+
+	.c-contacts{
+		justify-content: space-around;
+	}
+	.c-reviews__item__comment{
+		margin-bottom: calculateRem(18,18);
+	}
+}
+
+@media all and (max-width: 1020px){
+
+	.c-reviews__item__response{
+		padding-top: 0;
+	}
+	.c-reviews__item__response__title{
+		display: block;
+	}
+	.c-reviews__item__response__name{
+		float: none;
+	}
+}
+
+@media all and (max-width: 845px){
+	html{
+		font-size: 15px;
+	}
+	.pageHeader__logo{
+		top: calculateRem(45,18);
+		left: calculateRem(30,18);
+		width: calculateRem(140, 18);
+		height: calculateRem(45,18);
+	}
+
+	.pageHeader__menu{
+		top: calculateRem(45,18);
+		right: calculateRem(30,18);
+	}
+
+	.pageFooter__rights{
+		bottom: calculateRem(47,18);
+		left: calculateRem(30,18);
+	}
+	.pageFooter__questions{
+		bottom: calculateRem(47,18);
+		right: calculateRem(30,18);
+	}
+}
+
+@media all and (max-width: 650px){
+	html{
+		font-size: 14px;
+	}
+	.pageHeader__logo{
+		top: calculateRem(40,18);
+		left: calculateRem(20,18);
+	}
+
+	.pageHeader__menu{
+		top: calculateRem(30,18);
+		right: calculateRem(20,18);
+
+	}
+	.c-about{
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.c-about__article{
+		padding-top: calculateRem(60,18);
+		padding-bottom: 0;
+		width: 100%;
+	}
+
+	.c-about__video{
+		width: 100%;
+		padding-top: 0;
+		&__video{
+			width: 100%;
+		}
+		&__caption{
+		line-height: calculateRem(30,18);
+		}
+	}
+
+	p{
+		margin-top: calculateRem(16,18);
+		margin-bottom: calculateRem(16,18);
+	}
+
+	.pageFooter__questions{
+		width: calculateRem(250, 18);
+		height: calculateRem(40, 18);
+		font-size: calculateRem(24,18);
+		line-height: calculateRem(23.4, 18);
+		padding: calculateRem(7,18);
+		&:after{
+			bottom: calculateRem(-18, 18);
+			right: calculateRem(-11, 18);
+			border: calculateRem(9, 18) solid transparent;
+			border-left: calculateRem(34.2, 18) solid #1e1e20;
+			transform: rotate(45deg);
+		}
+	}
+
+	.c-reviews{
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		margin-top: calculateRem(80,18);
+		margin-bottom: calculateRem(100,18);
+		&__item{
+			width: 100%;
+			margin-top: 0;
+			&__caption{
+				font-size: calculateRem(35,18);
+				margin-bottom: calculateRem(20,18);
+			}
+			&__map__map{
+				height: calculateRem(150,18);
+			}
+		}
+	}
+	.c-reviews__item__response{
+		margin-bottom: calculateRem(20,18);
+	}
+	.c-reviews__item__response__title{
+	display: inline-block;
+}
+	.c-reviews__item__response__name{
+		float: right;
+	}
+
+}
+
+@media all and (max-width: 550px) {
+	html {
+		font-size: 13px;
+	}
+	.s-pageSection {
+		height: auto;
+		min-height: 1px;
+		padding-top: 90px;
+
+		&_cover{
+			height: 100vh;
+			padding-top: 0;
+		}
+		&_about {
+			@include bgPaperSmallScreen;
+
+		}
+		&_reviews {
+			@include bgPaperSmallScreen;
+			margin-top: 0;
+		}
+		&_contacts{
+			padding-bottom: 150px;
+		}
+
+	}
+
+	.pageHeader{
+		display: block;
+		width: 100vw;
+		height: calculateRem(60,18);
+		z-index: 2;
+		background: #d7d7d7;
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		&__menu{
+			position: absolute;
+			content: "";
+			top: 10px;
+			left: 0;
+			text-align: right;
+			&__item{
+				@include menuStyleSmallScreen;
+				padding-right: calculateRem(8,18);
+			}
+		}
+		&__logo{
+			position: absolute;
+			content: "";
+			left: calculateRem(8,18);
+			top: calculateRem(8,18);
+		}
+	}
+	.pageFooter{
+		display: block;
+		width: 100vw;
+		height: calculateRem(60,18);
+		z-index: 2;
+		background: #d7d7d7;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		&__rights{
+			position: absolute;
+			content: "";
+			top: 30%;
+			left: 25%;
+		}
+		&__questions{
+			position: absolute;
+			content: "";
+			top: calculateRem(5,18);
+			right: 25%;
+		}
+
+	}
+	.c-about__article{
+		padding-top: 0;
+	}
+	
+
+	.c-details__icons {
+		flex-flow: row wrap;
+		&__item {
+			flex-shrink: 0;
+			&__img {
+				height: calculateRem(120, 18);
+				background-position: center center;
+			}
+		}
+	}
+	.pageFooter__rights {
+		bottom: calculateRem(15, 18);
+		left: calculateRem(15, 18);
+	}
+	.pageFooter__questions span {
+		display: none;
+	}
+	.pageFooter__questions {
+		bottom: calculateRem(15, 18);
+		right: calculateRem(15, 18);
+		background: url("/img/faq-circular-filled-button.png") no-repeat;
+		background-size: cover;
+		background-position: center center;
+		width: calculateRem(50, 18);
+		height: calculateRem(50, 18);
+		border: none;
+
+		&:after {
+			display: none;
+		}
+	}
+	nav label{
+		display: inline-block;
+		width: 50px;
+		height: 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	nav > ul {
+		display: none;
+	}
+	input[type="checkbox"]:checked ~ label + ul {
+		display: block;
+	}
+	nav li{
+		display: inline-block;
+		text-align: center;
+	}
+	ul{
+		padding:0;
+		margin: calculateRem(44,18) 0 0 0;
+		width: 100vw;
+		background: #d7d7d7;
+		line-height: 21px;
+	}
+
+	.c-reviews{
+		margin-top: 0;
+		&__item{
+			padding-top: 0;
+		}
+	}
+
+	.c-contacts{
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		&__item{
+			&__button{
+				margin-top: calculateRem(40,18);
+
+			}
+		}
+	}
+}
+
+//@media all and (max-width: ){}
+
+//@media all and (max-height: ){}
+

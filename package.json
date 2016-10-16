@@ -1,0 +1,40 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "project_desc",
+  "main": "server.js",
+  "dependencies": {
+    "express": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-plumber": "latest",
+    "browserify": "latest",
+    "gulp-sass": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "browser-sync": "latest",
+    "vinyl-source-stream": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-uglify": "latest",
+    "vinyl-buffer": "latest",
+    "gulp-debug": "latest",
+    "gulp-cached": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "angry_bird",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

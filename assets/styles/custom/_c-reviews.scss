@@ -1,0 +1,109 @@
+.c-reviews{
+	height: 70%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	-ms-flex-pack: center;
+	max-width: 1200px;
+	padding: calculateRem(15,18);
+	//padding: 15px;
+
+	&__item{
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		margin: calculateRem(10, 18);
+		//margin: 10px;
+		@include articleText_dark;
+
+		&__caption{
+			@include articleCaption_dark-big;
+			text-align: center; //text-align: left; text-align: right;
+			margin-bottom: calculateRem(30,18);
+			//margin-bottom: 30px;
+			//font-size: 40px;
+		}
+		&__comment{
+			margin-bottom: calculateRem(25,18);
+			//margin-bottom: 25px;
+
+			&__name{
+				display: inline-block;
+				font-weight: 700;
+				font-size: calculateRem(25,18);
+				//font-size: 25px;
+			}
+			&__date{
+				font-weight: 700;
+				font-size: calculateRem(12.5, 18);
+				//font-size: 12.5px;
+				display: inline-block;
+				margin-left: calculateRem(10, 18);
+				//margin-left: 10px;
+			}
+			&__text{
+				font-size: calculateRem(18,18);
+			}
+		}
+
+		&__response{
+			padding-top: calculateRem(20, 18);
+			//padding-top: 20px;
+			font-size: calculateRem(20, 18);
+			//font-size: 20px;
+			font-weight: 700;
+			line-height: calculateRem(31, 18);
+			//line-height: 31px;
+			position: relative;
+			&__title{
+				display: inline-block;
+			}
+
+			&__name{
+				display: inline-block;
+				@include textInsideTextarea;
+				width: calculateRem(260, 18);
+				height: calculateRem(31, 18);
+				//width: 260px;
+				//height: 31px;
+				margin-bottom: calculateRem(9, 18);
+				//margin-bottom: 9px;
+				float: right;
+				background: none;
+				border: 1px solid #7d7c77;
+			}
+			&__text{
+				@include textInsideTextarea;
+				width: 100%;
+				background: none;
+				border: 1px solid #7d7c77;
+				padding-right: calculateRem(120, 18);
+				//padding-right: 120px;
+			}
+			&__buttonSend{
+				position: absolute;
+				bottom: calculateRem(10,18);
+				right: calculateRem(10,18);
+				/*bottom: 10px;
+				right: 10px;*/
+				border: none;
+				background: none;
+				font-size: calculateRem(20, 18);
+				//font-size: 20px;
+				font-weight: bold;
+				@include menuColorDark;
+				&:hover{
+					cursor: pointer;
+
+				}
+			}
+		}
+
+		&__map__map{
+			width: 100%;
+			height: calculateRem(300,18);
+		}
+	}
+}
+

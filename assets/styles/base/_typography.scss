@@ -1,0 +1,34 @@
+
+h1 {
+  @include font(48px, 1.5);
+  font-weight: bold;
+}
+
+h2 {
+  @include font(36px, 1.5);
+  font-weight: bold;
+}
+
+h3 {
+  @include font(24px, 1.5);
+  font-weight: bold;
+}
+
+h4 {
+  @include font(18px, 1.5);
+  font-weight: bold;
+}
+
+h5 {
+  @include font(13px, 1.5);
+  font-weight: bold;
+}
+
+h6 {
+  @include font(13px, 1.5);
+}
+
+
+
+
+

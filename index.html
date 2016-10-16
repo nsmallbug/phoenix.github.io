@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phoenix</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="build/combined.css">
+    <SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="assets/js/enter.js"></SCRIPT>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <a href="#s-cover" class="pageHeader__logo"></a> <!--Если сделать <a href="/"...>, тогда ссылка будет отправлять в корень сайта, перезагружая страницу-->
+    <nav class="pageHeader__menu">
+        <input type="checkbox" name="menu" id="menuButton">
+        <label for="menuButton"></label>
+        <ul>
+            <li><a href="#s-about" class="pageHeader__menu__item pageHeader__menu__item_active">ПРО ЗАСІБ</a></li>
+            <li><a href="#s-details" class="pageHeader__menu__item">ПОДРОБИЦІ</a></li>
+            <li><a href="#s-reviews" class="pageHeader__menu__item">ВІДГУКИ</a></li>
+            <li><a href="#s-contacts" class="pageHeader__menu__item">КОНТАКТИ</a></li>
+        </ul>
+    </nav>
+
+</header>
+<section class="s-pageSection s-pageSection_cover" id="s-cover">
+    <div class="s-pageSection__content">
+        <div class="c-cover">
+            <div class="c-cover__logoLarge"></div>
+            <a href="#s-about" class="c-cover__logoSmall"></a>
+        </div>
+    </div>
+</section>
+<section class="s-pageSection s-pageSection_about" id="s-about">
+    <div class="s-pageSection__content">
+        <div class="c-about">
+            <div class="c-about__article">
+                <div class="c-about__article__caption">Що таке Антипірен "Фенікс"?</div>
+                <div class="c-about__article__text">
+                    <p>Nullam hendrerit justo et efficitur facilisis. Aenean fermentum fringilla massa in dapibus. Mauris
+                        facilisis, elit elementum pharetra ultricies, magna tortor dictum erat, accumsan fringilla sem est
+                        et purus. Phasellus id tortor sit amet arcu aliquet eleifend non nec risus.
+                </div>
+                <div class="c-about__article__caption">Застосування</div>
+                <div class="c-about__article__text">
+                    <p>Nullam hendrerit justo et efficitur facilisis. Aenean fermentum fringilla massa in dapibus. Mauris
+                        facilisis, elit elementum pharetra ultricies, magna tortor dictum erat, accumsan fringilla sem est
+                        et purus. Phasellus id tortor sit amet arcu aliquet eleifend non nec risus. Nam porttitor lacus eget
+                        magna facilisis iaculis eu id libero. Praesent eu fringilla lectus. Aenean at dolor non libero bibendum
+                        rutrum quis sit amet turpis.
+                </div>
+            </div>
+            <div class="c-about__video">
+                <div class="c-about__video__caption">Эффект антипирена продемонстирован на видео.</div>
+                <iframe class="c-about__video__video" src="https://www.youtube.com/embed/B38F__VFSnw"></iframe>
+                <div class="c-about__video__social"> Розповісти:
+                    <a class="c-about__video__social__icon c-about__video__social__icon_twitter" href="https://twitter.com/home?status=https%3A//youtu.be/B38F__VFSnw" target="_blank" onclick="return Share.me(this)"></a>
+                    <a class="c-about__video__social__icon c-about__video__social__icon_tumblr"href='http://www.tumblr.com/share/link?url=https%3A%2F%2Fyoutu.be%2FB38F__VFSnw' target="_blank" onclick="return Share.me(this);"></a>
+                    <a class="c-about__video__social__icon c-about__video__social__icon_fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//youtu.be/B38F__VFSnw" target="_blank" onclick="return Share.me(this);"></a>
+                </div>
+                <div class="c-about__video__description">
+                    <p> Nullam hendrerit justo et efficitur facilisis. Aenean fermentum fringilla massa in dapibus.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-pageSection s-pageSection_details" id="s-details">
+    <div class="s-pageSection__content">
+        <div class="c-details">
+            <div class="c-details__article">
+                <div class="c-details__article__caption">Чому ми ним користуємось?</div>
+                <div class="c-details__article__text">
+                    <p> Donec et tincidunt nulla, varius egestas augue. Sed posuere suscipit neque ut pretium.
+                        Aenean odio enim, vestibulum nec mollis nec, eleifend in lacus. Pellentesque non facilisis nunc,
+                        in bibendum turpis. Cras finibus sem felis, consequat bibendum lacus ornare in. Vestibulum ante
+                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec volutpat, leo ut
+                        facilisis facilisis, felis enim semper erat, id vehicula ex leo vitae erat.
+                </div>
+            </div>
+            <div class="c-details__icons">
+                <div class="c-details__icons__item">
+                    <div class="c-details__icons__item__img c-details__icons__item__img_first"></div>
+                    <div class="c-details__icons__item__text">ЕФЕКТИВНИЙ ВОГНЕТРИВКИЙ ЗАСІБ</div>
+                </div>
+                <div class="c-details__icons__item">
+                    <div class="c-details__icons__item__img c-details__icons__item__img_second"></div>
+                    <div class="c-details__icons__item__text">ЗРУЧНИЙ У ЗАСТОСУВАННІ</div>
+                </div>
+                <div class="c-details__icons__item">
+                    <div class="c-details__icons__item__img c-details__icons__item__img_third"></div>
+                    <div class="c-details__icons__item__text">СТІЙКИЙ ДО ПОГОДНІХ УМОВ</div>
+                </div>
+                <div class="c-details__icons__item">
+                    <div class="c-details__icons__item__img c-details__icons__item__img_fourth"></div>
+                    <div class="c-details__icons__item__text">ДОСТУПНИЙ ДЛЯ КОЖНОГО</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-pageSection s-pageSection_reviews" id="s-reviews">
+    <div class="s-pageSection__content s-pageSection__content__c-reviews">
+        <div class="c-reviews">
+            <div class="c-reviews__item">
+                <div class="c-reviews__item__caption">Відгуки</div>
+                <div class="c-reviews__item__comment">
+                    <div class="c-reviews__item__comment__name">Василь</div>
+                    <div class="c-reviews__item__comment__date">12.09.2016</div>
+                    <div class="c-reviews__item__comment__text">Donec et tincidunt nulla, varius egestas augue. Sed posuere suscipit neque ut pretium.
+                        Aenean odio enim, vestibulum nec mollis nec, eleifend in lacus. Pellentesque non facilisis nunc,
+                        in bibendum turpis. Cras finibus sem felis</div>
+                </div>
+                <div class="c-reviews__item__comment">
+                    <div class="c-reviews__item__comment__name">Ірина</div>
+                    <div class="c-reviews__item__comment__date">12.09.2016</div>
+                    <div class="c-reviews__item__comment__text">Donec et tincidunt nulla, varius egestas augue. Sed posuere suscipit neque ut pretium.
+                        Aenean odio enim, vestibulum nec mollis nec, eleifend in lacus. Pellentesque non facilisis nunc,
+                        in bibendum turpis. Cras finibus sem felis</div>
+                </div>
+                <div class="c-reviews__item__comment">
+                    <div class="c-reviews__item__comment__name">Карина Вагбер</div>
+                    <div class="c-reviews__item__comment__date">12.09.2016</div>
+                    <div class="c-reviews__item__comment__text">Donec et tincidunt nulla, varius egestas augue. Sed posuere suscipit neque ut pretium.
+                        Aenean odio enim, vestibulum nec mollis nec, eleifend in lacus. Pellentesque non facilisis nunc,
+                        in bibendum turpis. Cras finibus sem felis</div>
+                </div>
+
+                <form class="c-reviews__item__response">
+                    <div class="c-reviews__item__response__title">Бажаєте залишити відгук?</div>
+                    <input type="text" name="" class="c-reviews__item__response__name" placeholder="Ваше ім'я" maxlength="100"> <!--TODO: добавить значение в атрибут NAME (спросить у ребят что принимает сервер) -->  <!-- Между тегами <textarea> и </textarea> не должно быть пробела, иначе плейсхолдер не отображается.-->
+                    <textarea name="" class="c-reviews__item__response__text" placeholder="Ваш відгук..." cols="50" maxlength="500"></textarea> <!--TODO: добавить значение в атрибут NAME (спросить у ребят что принимает сервер) -->  <!-- Между тегами <textarea> и </textarea> не должно быть пробела, иначе плейсхолдер не отображается.-->
+                    <input type="submit" value="НАДІСЛАТИ" class="c-reviews__item__response__buttonSend">
+                </form>
+
+            </div>
+            <div class="c-reviews__item">
+                <div class="c-reviews__item__caption">Як замовити, де придбати</div>
+                <div class="c-reviews__item__buy">
+                    <p>
+                        Ви можете замовити Антипірен "Фенікс", зателефонувавши за вказаними номерами або скористайтеся кнопкою "Написати нам", що знаходиться у розділі "Контакти".
+                    </p>
+                </div>
+                <div class="c-reviews__item__map">
+                    <iframe class="c-reviews__item__map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4295.618590090399!2d-117.92116288479119!3d33.81209178067196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d12b3b5e6b%3A0x2ef62f8418225cfa!2sDisneyland+Park!5e1!3m2!1suk!2sua!4v1473440824872" frameborder="2"  allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-pageSection s-pageSection_contacts" id="s-contacts">
+    <div class="s-pageSection__content">
+        <div class="c-contacts">
+            <div class="c-contacts__item">
+                <div class="c-contacts__item content__item_phones">
+                    <div class="c-contacts__item__caption c-contacts__item__caption_phones">Телефони:</div>
+                    <div class="c-contacts__item__item">063 64 64 960</div>
+                    <div class="c-contacts__item__item">093 099 53 92</div>
+                    <div class="c-contacts__item__item">097 565 28 18</div>
+                </div>
+                <div class="c-contacts__item c-contacts__item_social">
+                    <div class="c-contacts__item__caption c-contacts__item__caption_social">Ми в соц. мережах:</div>
+                    <div class="w-contacts"> <!--Этот врапер нужен только для того, чтобы сделать отступ у первой картинки в 20px, как и требует дизайн-->
+                        <a href="" class="c-contacts__item__item c-contacts__item__item_social c-contacts__item__item_twitter"></a>
+                        <a href="" class="c-contacts__item__item c-contacts__item__item_social c-contacts__item__item_tumblr"></a>
+                        <a href="" class="c-contacts__item__item c-contacts__item__item_social c-contacts__item__item_fb"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-contacts__item c-contacts__item__button"><!--TODO Поменять названия классов тут, в css и в скриптовом файле-->
+                <button class="js-contactsPopup c-contacts__item__button__caption">Написати нам</button>
+                <div class="popup">
+                    <div class="popup_bg"></div>
+                    <div class="form">
+                        <form class="c-contacts__item" action="" method=""> <!--TODO 1) какой метод у формы; 2) какие параметры должна отдавать форма на сервер и по какому URL-->
+                            <textarea name="" class="c-contacts__item__comment__text" placeholder="" cols="50" maxlength="3000"></textarea> <!--TODO: добавить значение в атрибут NAME (спросить у ребят что принимает сервер) -->  <!-- Между тегами <textarea> и </textarea> не должно быть пробела, иначе плейсхолдер не отображается. Если же текст ввести между тегами <textarea> и </textarea> - тогда текст отобразится внутри поля ввода, но не исчезнет при нажании и пользователю придется удалять наше сообщение-->
+                            <input type="submit" value="Отправить" class="c-contacts__item__comment__buttonSend buttonSend">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="pageFooter">
+    <div class="pageFooter__rights">&#169; Всі права захищені</div>
+    <a href="#s-contacts" class="pageFooter__questions"><span>Маєте запитання?</span></a>
+</footer>
+<script src="build/combined.js"></script>
+</body>
+</html>

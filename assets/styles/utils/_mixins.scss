@@ -1,0 +1,280 @@
+@mixin font($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  font-size: calculateRem($fontSize, $baseFontSize);
+  line-height: $lineHeight;
+  @content;
+}
+
+/*@mixin font (размер в пх, который указан в */
+
+@mixin mdmax($arg){
+  @media screen and(max-width: $arg + px){
+    @content;
+  }
+}
+
+@mixin mdmaxHeight($arg){
+  @media screen and(max-height: $arg + px){
+    @content;
+  }
+}
+
+@mixin bgCover(){
+  background: url("/img/bgCover.jpg") no-repeat;
+  background-size: cover;
+}
+
+@mixin bgDetails(){
+  background: url("/img/bgDetails.jpg") no-repeat;
+  background-size: cover;
+}
+
+@mixin bgContacts(){
+  background: url("/img/bgContacts.jpg") no-repeat;
+  background-size: cover;
+}
+
+@mixin bgPaper(){
+  background: url("/img/bgPaper.png") no-repeat;
+  background-size: cover;
+  margin-top: -4vh;
+  margin-bottom: -4vh;
+}
+
+@mixin bgPaperSmallScreen{
+  background: url("/img/bgSmallScreen.png") no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin menuStyle{
+  font-size: calculateRem(21, 18);
+  //font-size: 21px;
+  font-weight: bold;
+}
+@mixin menuStyleSmallScreen{
+  font-size: calculateRem(16,18);
+}
+
+
+@mixin menuColor{
+  color: #715b3f;
+}
+
+@mixin menuColorLight{
+  color: #ffffff;
+}
+
+@mixin menuColorDark{
+  color: #3e3e3e;
+}
+
+@mixin menuButton{
+  background: url("/img/menu.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@mixin logo_Phoenix_large{
+  background: url("/img/Logo.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@mixin logo_Phoenix_light{
+  background: url("/img/Logo_mini_white.png") no-repeat;
+  background-size: contain;
+}
+
+@mixin logo_Phoenix_dark{
+  background: url("/img/Logo_mini_black.png") no-repeat;
+  background-size: contain;
+}
+/*В дизайне проработано 2 типа фонов: темный и светлый.
+На темном фоне используется миксин logo_Phoenix_light,
+На светлом фоне - logo_Phoenix_dark. */
+
+@mixin fire{
+  background: url("/img/buttonNext.png") no-repeat;
+  background-size: contain;
+}
+
+@mixin articleCaption_dark-small{
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: calculateRem(33, 18);
+  //font-size: 33px;
+}
+
+@mixin articleCaption_dark-big{
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: calculateRem(40, 18);
+}
+
+@mixin articleCaption_light{
+  color: #dfdfdf;
+  font-weight: bold;
+  font-size: calculateRem(40, 18);
+  //font-size: 40px;
+}
+
+@mixin videoCaption{
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: calculateRem(21, 18);
+  //font-size: 21px;
+}
+
+@mixin videoCaption_underVideo{
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: calculateRem(18, 18);
+}
+/*В дизайне проработано 2 типа фонов: темный и светлый.
+На темном фоне используется миксин articleCaption_light,
+На светлом фоне - articleCaption_dark. */
+
+@mixin articleText_dark{
+  color: #3e3e3e;
+  font-size: calculateRem(18, 18);
+}
+
+@mixin articleText_light{
+  color: #d7d7d7;
+  font-size: calculateRem(18, 18);
+}
+
+@mixin iconFirst{
+  background: url("/img/iconFireproof.png") no-repeat;
+  background-size: contain;
+}
+
+@mixin iconSecond{
+  background: url("/img/iconEasyToUse.png") no-repeat;
+  background-size: contain;
+}
+//iconFast -> iconFirst
+//iconCheap -> iconSecond
+//iconQuality -> iconThird
+//iconQuality -> iconFourth
+@mixin iconThird{
+  background: url("/img/iconWeather-resistant.png") no-repeat;
+  background-size: contain;
+}
+@mixin iconFourth{
+  background: url("/img/iconCheap.png") no-repeat;
+  background-size: contain;
+}
+
+@mixin textUnderIcons(){
+  color: #dfdfdf;
+  font-size: calculateRem(21, 18);
+  //font-size: 21px;
+}
+
+@mixin contactsText{
+  font-size: calculateRem(27, 18);
+  //font-size: 27px;
+  color: #75582e;
+  font-weight: bold;
+  margin-bottom: calculateRem(19,18);
+  //margin-bottom: 19px;
+
+}
+
+@mixin contactsPhones{
+  font-size: calculateRem(40, 18);
+  //font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: calculateRem(19,18);
+  //margin-bottom: 19px;
+}
+
+@mixin contactsIconTwitter{
+  background: url("/img/twitter_design.png") no-repeat;
+  background-size: contain;
+  width: calculateRem(43, 18);
+  //width: 43px;
+  background-position:center center;
+}
+
+@mixin contactsIconTwitter_dark{
+  background: url("/img/twitter_design_dark.png") no-repeat;
+  background-size: contain;
+  width: calculateRem(42, 18);
+  //width: 42px;
+  background-position:center center;
+}
+
+@mixin contactsIconTumblr{
+  background: url("/img/tumblr_design.png") no-repeat;
+  background-size:contain;
+  width: calculateRem(20, 18);
+  //width: 20px;
+  background-position:center center;
+}
+
+@mixin contactsIconTumblr_dark{
+  background: url("/img/tumblr_design_dark.png") no-repeat;
+  background-size:contain;
+  width: calculateRem(18, 18);
+ // width: 18px;
+  background-position:center center;
+}
+
+@mixin contactsIconFb{
+  background: url("/img/fb_design.png") no-repeat;
+  background-size: contain;
+  width: calculateRem(30, 18);
+  //width: 30px;
+  background-position:center center;
+}
+
+@mixin contactsIconFb_dark{
+  background: url("/img/fb_design_dark.png") no-repeat;
+  background-size: contain;
+  width: calculateRem(29, 18);
+  //width: 29px;
+  background-position:center center;
+}
+
+@mixin textInsideTextarea{
+  color: #3e3e3e;
+  font-size: calculateRem(17, 18);
+  //font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: calculateRem(9,18);
+  line-height: calculateRem(27,18);
+ // padding-left: 9px;
+ // line-height: 27px;
+}
+
+@mixin buttonSend{
+  width: calculateRem(200,24);
+  height: calculateRem(50, 24);
+  color: #fff; /* цвет текста */
+  user-select: none; /* убирать выделение текста */
+  background: lighten(saddlebrown, 15); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border: none;
+}
+
+
+@mixin footerRights{
+  font-weight: 300;
+  font-size: calculateRem(21, 18);
+  //font-size: 21px;
+  color: #474747;
+}
+
+
+@mixin footerButton{
+  font-size: calculateRem(33, 18);
+  //font-size: 33px;
+  color: #fefefe;
+  font-weight: bold;
+}

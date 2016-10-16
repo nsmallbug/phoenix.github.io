@@ -1,0 +1,21 @@
+@import "../../../vendor/susy/sass/susy";
+
+$susy: (
+        flow: ltr,
+        math: fluid,
+        output: float,
+        gutter-position: split,
+        container: (1280px),
+        container-position: center,
+        columns: 12,
+        gutters: .25,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .5),
+                output: background,
+                toggle: top right,)
+);
+.container {
+  @include container;
+  padding:0 10px;
+}

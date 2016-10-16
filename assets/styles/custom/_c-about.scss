@@ -1,0 +1,79 @@
+.c-about {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	padding: calculateRem(15,18);
+	//padding: 15px;
+
+
+	&__article {
+		width: 50%;
+		padding: calculateRem(20,18);
+		//padding: 20px;
+
+		&__caption{
+			@include articleCaption_dark-small;
+			text-align: center;
+		}
+
+		&__text{
+			@include articleText_dark;
+		}
+	}
+	&__video {
+		width: 50%;
+		padding: calculateRem(20,18);
+		//padding: 20px;
+		@include articleText_dark;
+
+		&__caption{
+			text-align: center;
+			line-height: calculateRem(60,18);
+			//line-height: 60px;
+			@include videoCaption;
+		}
+
+		&__video {
+			width: 99%;
+			height: calculateRem(300, 18);
+			//height: 300px;
+			border: none;
+		}
+
+		&__social{
+			text-align: right;
+			@include videoCaption_underVideo;
+
+
+			&__icon{
+				height: calculateRem(30,18);
+				//height: 30px;
+				display: inline-block;
+				margin-left: calculateRem(12,18);
+				margin-top: calculateRem(10,18);
+				//margin-left: 12px;
+				//margin-top: 10px;
+
+				&_twitter{
+					@include contactsIconTwitter_dark;
+				}
+				&_tumblr{
+					@include contactsIconTumblr_dark;
+				}
+				&_fb{
+					@include contactsIconFb_dark;
+
+				}
+			}
+
+		}
+
+		&__description{
+
+			text-indent: 0;
+			@include articleText_dark;
+		}
+	}
+}
+

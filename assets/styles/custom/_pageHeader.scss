@@ -1,0 +1,60 @@
+.pageHeader{
+	&__logo{
+		z-index: 2;
+		position: fixed;
+		top: calculateRem(60,18);
+		//top: 60px;
+		left: calculateRem(50,18);
+		//left: 50px;
+		width: calculateRem(165, 18);
+		//width: 165px;
+		height: calculateRem(75,18);
+		//height: 75px;
+		@include logo_Phoenix_dark;
+	}
+	&__menu{
+		z-index: 2;
+		position: fixed;
+		top: calculateRem(60, 18);
+		right: calculateRem(50, 18);
+		//top: 60px;
+		//right: 50px;
+		margin:  1px 1px 1px auto;
+		text-align: right;
+
+
+		&__item{
+			@include menuColor;
+			@include menuStyle;
+			padding-left: calculateRem(10, 18);
+			//padding-left: 10px;
+			text-decoration: none;
+			&_active{
+				@include menuColorLight;
+			}
+			&:hover{
+				@include menuColorLight
+			}
+		}
+
+	}
+}
+
+nav li{
+	display: inline-block;
+	vertical-align: top;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+nav label {
+	@include menuButton;
+	display: none;
+	cursor: pointer;
+	transition: 0.3s;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+}
+

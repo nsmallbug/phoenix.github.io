@@ -1,0 +1,8 @@
+{
+  "name": "workflow",
+  "description": "project_desc",
+  "version": "1.0.0",
+  "dependencies": {
+    "susy": "latest"
+  }
+}

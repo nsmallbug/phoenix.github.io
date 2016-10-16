@@ -1,0 +1,61 @@
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:3;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.form {
+	position: relative;
+	margin: auto;
+	z-index:4;
+	width: calculateRem(400,18);
+	//width:400px;
+
+	background: #ffffff;
+	border:1px solid #666666;
+	box-shadow:0 0 2px rgba(0,0,0,0.7);
+}
+
+.form input {
+	width:96%;
+	padding:5px 2%;
+	margin:10px 0;
+	background: none;
+	font-size: calculateRem(25, 18);
+	//font-size: 25px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3e3e3e;
+	border: 1px solid #3e3e3e;
+
+	&:hover{
+		cursor: pointer;
+		color: #171717;
+		border: 1px solid #171717;
+		background: rgba(62, 62, 62, 0.3);
+	}
+}
+
+
+.c-contacts__item__comment__text{
+	width: calculateRem(350, 18);
+ 	//width: 350px;
+	height: calculateRem(120,18);
+	//height: 120px;
+	font-size: calculateRem(18,18);
+	color: #3e3e3e;
+}
